@@ -32,7 +32,7 @@ public class Opskrift {
 
     }
     public void showIngrediends(){ // Her bruger jeg en fori løkke til at vise alle de ingredienser der er i den opskrift brugeren har valgt.
-        System.out.println("ingredienserne er følgende: ");
+
         for (int i = 0; i < ingredienser.size(); i++) {
             System.out.println("- " + ingredienser.get(i));
         }
@@ -41,6 +41,12 @@ public class Opskrift {
     public void visFremgangsmaade(){
         System.out.println(fremgangsmaade);
 
+    }
+    public void visOpskrift(){
+        System.out.println("Til " + navn + " skal du bruge:");
+        showIngrediends();
+        System.out.println("Fremgransmaaden er følgende:");
+        System.out.println(fremgangsmaade);
     }
 
 

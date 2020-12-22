@@ -81,6 +81,8 @@ public class SimpleTest {
         }
         linjeskift();
         System.out.println("*****************");
+        linjeskift();
+        glasurOpskrift.visOpskrift();
 
 
     }
