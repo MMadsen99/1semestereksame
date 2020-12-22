@@ -3,6 +3,7 @@ package sample;
 import java.util.ArrayList;
 
 public class Opskrift implements Kalorierberegner {
+    //instans variabler
     String navn = "";
     String fremgangsmaade = "";
     int antalPortioner;
