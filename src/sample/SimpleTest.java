@@ -1,5 +1,6 @@
 package sample;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SimpleTest {
@@ -12,11 +13,11 @@ public class SimpleTest {
         System.out.println("Indhold i kogebogen");
         System.out.println("********************");
         linjeskift();
-        Opskrift glasurOpskrift = new Opskrift("Glasur","Bland vand og flormelis",1,5,"Vand og flormelis");
+        Opskrift glasurOpskrift = new Opskrift("Glasur","Bland vand og flormelis",1,5);
         System.out.println("1: " + glasurOpskrift.navn);
         linjeskift();
 
-        Opskrift teOpskrift = new Opskrift("Citron te","skær en citron ud i både og lig dem i kogende vand",1,10,"Vand og citron");
+        Opskrift teOpskrift = new Opskrift("Citron te","skær en citron ud i både og lig dem i kogende vand",1,10);
         System.out.println("2: " + teOpskrift.navn);
         linjeskift();
 
@@ -35,14 +36,19 @@ public class SimpleTest {
             case 1:
                 System.out.println("Til " + glasurOpskrift.navn+ " skal du bruge: ");
                 linjeskift();
-                System.out.println(glasurOpskrift.ingredienser);
+                glasurOpskrift.ingredienser.add("Vand");
+                glasurOpskrift.ingredienser.add("Flormelis");
+                System.out.println("- " + glasurOpskrift.ingredienser.get(0));
+                System.out.println("- " + glasurOpskrift.ingredienser.get(1));
                 linjeskift();
+
                 System.out.println("Fremgangsmaaden er således: ");
                 linjeskift();
                 System.out.println(glasurOpskrift.fremgangsmaade + " indtil det får den konsistens du ville have din glasur i");
                 linjeskift();
+
                 System.out.println("********************");
-                System.out.println("\t Kalorieberegning");
+                System.out.println(" Kalorieberegning");
                 System.out.println("********************");
                 linjeskift();
                 System.out.println("Der er 150 kalorier i en potion " + glasurOpskrift.navn);
@@ -50,8 +56,13 @@ public class SimpleTest {
                 break;
             case 2:
                 System.out.println("Til " + teOpskrift.navn + " skal du bruge: ");
-                System.out.println(teOpskrift.ingredienser);
                 linjeskift();
+                teOpskrift.ingredienser.add("Citron");
+                teOpskrift.ingredienser.add("Kogende vand");
+                System.out.println("- " + teOpskrift.ingredienser.get(0));
+                System.out.println("- " + teOpskrift.ingredienser.get(1));
+                linjeskift();
+
                 System.out.println("Fremgangsmaaden er således: ");
                 System.out.println(teOpskrift.fremgangsmaade + " i ca 10 min");
                 linjeskift();
