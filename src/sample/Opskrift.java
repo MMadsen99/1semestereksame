@@ -31,6 +31,9 @@ public class Opskrift {
         ingredienser.add(ingrediens);
 
     }
+    public void addIngrediens(String navn, int kalorier){
+        System.out.println(navn + " har " + kalorier + " kalorier");
+    }
     public void showIngrediends(){ // Her bruger jeg en fori løkke til at vise alle de ingredienser der er i den opskrift brugeren har valgt.
 
         for (int i = 0; i < ingredienser.size(); i++) {

@@ -38,6 +38,7 @@ public class SimpleTest {
                 linjeskift();
                 glasurOpskrift.addIngrediends("Vand");
                 glasurOpskrift.addIngrediends("Flormelis");
+
                 System.out.println("- " + glasurOpskrift.ingredienser.get(0));
                 System.out.println("- " + glasurOpskrift.ingredienser.get(1));
                 linjeskift();
@@ -68,6 +69,7 @@ public class SimpleTest {
                 linjeskift();
                 System.out.println("Du kan eventuelt selvtilføje andre tring til din te som f.eks ingefær");
                 linjeskift();
+
                 System.out.println("********************");
                 System.out.println("Kalorieberegning");
                 System.out.println("********************");
@@ -82,9 +84,12 @@ public class SimpleTest {
         linjeskift();
         System.out.println("*****************");
         linjeskift();
-        glasurOpskrift.visOpskrift();
+        IngrediensMedNaeringsdetaljer citronNaering = new IngrediensMedNaeringsdetaljer("Citron",29,58,26,8);
+        linjeskift();
+        IngrediensMedNaeringsdetaljer polseNaering = new IngrediensMedNaeringsdetaljer("Pølse",161,0,21,12);
 
 
+//(String navn, int kalorier, int cVitamin, int kalk, int magnesium)
     }
 
     public static void linjeskift(){
