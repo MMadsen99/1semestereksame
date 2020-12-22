@@ -8,13 +8,20 @@ public class Opskrift {
     String ingredienser;
 
 
+    public Opskrift() {
+        this.navn = navn;
+        this.fremgangsmaade = fremgangsmaade;
+        this.antalPortioner = antalPortioner;
+        this.tilberedningstid = tilberedningstid;
+        this.ingredienser = ingredienser;
+    }
+
     public Opskrift(String navn, String fremgangsmaade, int antalPortioner, double tilberedningstid, String ingredienser) {
         this.navn = navn;
         this.fremgangsmaade = fremgangsmaade;
         this.antalPortioner = antalPortioner;
         this.tilberedningstid = tilberedningstid;
         this.ingredienser = ingredienser;
-
-
     }
 }
+
