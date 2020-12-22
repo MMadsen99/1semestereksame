@@ -13,11 +13,11 @@ public class SimpleTest {
         System.out.println("Indhold i kogebogen");
         System.out.println("********************");
         linjeskift();
-        Opskrift glasurOpskrift = new Opskrift("Glasur","Bland vand og flormelis",1,5);
+        Opskrift glasurOpskrift = new Opskrift("Glasur","Bland vand og flormelis indtil det får den konsistens du ville have din glasur i",1,5);
         System.out.println("1: " + glasurOpskrift.navn);
         linjeskift();
 
-        Opskrift teOpskrift = new Opskrift("Citron te","skær en citron ud i både og lig dem i kogende vand",1,10);
+        Opskrift teOpskrift = new Opskrift("Citron te","skær en citron ud i både og lig dem i kogende vand, lad citronen ligge i vandt i 10 min",1,10);
         System.out.println("2: " + teOpskrift.navn);
         linjeskift();
 
@@ -44,7 +44,7 @@ public class SimpleTest {
 
                 System.out.println("Fremgangsmaaden er således: ");
                 linjeskift();
-                System.out.println(glasurOpskrift.fremgangsmaade + " indtil det får den konsistens du ville have din glasur i");
+                glasurOpskrift.visFremgangsmaade();
                 linjeskift();
 
                 System.out.println("********************");
@@ -64,7 +64,7 @@ public class SimpleTest {
                 linjeskift();
 
                 System.out.println("Fremgangsmaaden er således: ");
-                System.out.println(teOpskrift.fremgangsmaade + " i ca 10 min");
+                teOpskrift.visFremgangsmaade();
                 linjeskift();
                 System.out.println("Du kan eventuelt selvtilføje andre tring til din te som f.eks ingefær");
                 linjeskift();
@@ -81,7 +81,7 @@ public class SimpleTest {
         }
         linjeskift();
         System.out.println("*****************");
-        glasurOpskrift.showIngrediends();
+
 
     }
 

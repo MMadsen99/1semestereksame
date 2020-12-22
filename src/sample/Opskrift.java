@@ -36,8 +36,12 @@ public class Opskrift {
         for (int i = 0; i < ingredienser.size(); i++) {
             System.out.println("- " + ingredienser.get(i));
         }
-    }
 
+    }
+    public void visFremgangsmaade(){
+        System.out.println(fremgangsmaade);
+
+    }
 
 
 }
