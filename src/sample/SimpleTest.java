@@ -31,7 +31,7 @@ public class SimpleTest {
         System.out.println("Hvilken opskrift ville du kigge på? Tip skriv 1 eller 2");
         Scanner input = new Scanner(System.in);
         int x = input.nextInt();
-        //EKSEMPEL på en switch satement som ville gøre det meget nemt og udvide hvis jeg på et tidspunkt ville det.
+        //TODO en switch satement som ville gøre det meget nemt og udvide hvis jeg på et tidspunkt ville det.
         switch (x){
             case 1:
                 System.out.println("Til " + glasurOpskrift.navn+ " skal du bruge: ");
@@ -92,8 +92,9 @@ public class SimpleTest {
         linjeskift();
 
     }
-
+    //TODO metode uden parametere
     public static void linjeskift(){
+
         System.out.println("     ");
     }
 }

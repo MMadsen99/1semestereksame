@@ -8,11 +8,11 @@ public class Opskrift implements Kalorierberegner {
     String fremgangsmaade = "";
     int antalPortioner;
     double tilberedningstid;
-    ArrayList ingredienser = new ArrayList();
+    ArrayList ingredienser = new ArrayList(); //TODO en arraylist som indeholder ingredienserne for de forskellige opskrifter
 
 
 
-
+    //TODO constructor
     public Opskrift() {
         this.navn = navn;
         this.fremgangsmaade = fremgangsmaade;
@@ -20,7 +20,7 @@ public class Opskrift implements Kalorierberegner {
         this.tilberedningstid = tilberedningstid;
         this.ingredienser = ingredienser;
     }
-
+    //TODO constructor
     public Opskrift(String navn, String fremgangsmaade, int antalPortioner, double tilberedningstid) {
         this.navn = navn;
         this.fremgangsmaade = fremgangsmaade;
@@ -35,7 +35,7 @@ public class Opskrift implements Kalorierberegner {
     public void addIngrediens(String navn, int kalorier){
         System.out.println(navn + " har " + kalorier + " kalorier");
     }
-    public void showIngrediends(){ // Her bruger jeg en fori løkke til at vise alle de ingredienser der er i den opskrift brugeren har valgt.
+    public void showIngrediends(){ //TODO fori loop til at vise hvilke ingretienser der er.
 
         for (int i = 0; i < ingredienser.size(); i++) {
             System.out.println("- " + ingredienser.get(i));

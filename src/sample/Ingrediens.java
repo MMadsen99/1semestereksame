@@ -1,11 +1,12 @@
 package sample;
 
 public class Ingrediens implements Kalorierberegner{
+    //TODO Instansvariable
     String navn;
     int kalorier;
     Diet diet;
 
-    public void ingrediens(String navn, int kalorier) {
+    public void ingrediens(String navn, int kalorier) { //TODO  metode med formelle parametere
         this.navn = navn;
         this.kalorier = kalorier;
     }
@@ -18,7 +19,7 @@ public class Ingrediens implements Kalorierberegner{
 
 
     }
-
+    //TODO get og settere
     public String getNavn() {
         return navn;
     }
