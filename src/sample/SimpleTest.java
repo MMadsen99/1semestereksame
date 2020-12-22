@@ -36,8 +36,8 @@ public class SimpleTest {
             case 1:
                 System.out.println("Til " + glasurOpskrift.navn+ " skal du bruge: ");
                 linjeskift();
-                glasurOpskrift.ingredienser.add("Vand");
-                glasurOpskrift.ingredienser.add("Flormelis");
+                glasurOpskrift.addIngrediends("Vand");
+                glasurOpskrift.addIngrediends("Flormelis");
                 System.out.println("- " + glasurOpskrift.ingredienser.get(0));
                 System.out.println("- " + glasurOpskrift.ingredienser.get(1));
                 linjeskift();
@@ -57,8 +57,8 @@ public class SimpleTest {
             case 2:
                 System.out.println("Til " + teOpskrift.navn + " skal du bruge: ");
                 linjeskift();
-                teOpskrift.ingredienser.add("Citron");
-                teOpskrift.ingredienser.add("Kogende vand");
+                teOpskrift.addIngrediends("Citron");
+                teOpskrift.addIngrediends("Kogende Vand");
                 System.out.println("- " + teOpskrift.ingredienser.get(0));
                 System.out.println("- " + teOpskrift.ingredienser.get(1));
                 linjeskift();
@@ -69,7 +69,7 @@ public class SimpleTest {
                 System.out.println("Du kan eventuelt selvtilføje andre tring til din te som f.eks ingefær");
                 linjeskift();
                 System.out.println("********************");
-                System.out.println("\t Kalorieberegning");
+                System.out.println("Kalorieberegning");
                 System.out.println("********************");
                 linjeskift();
                 System.out.println("Der er 11 kalorier i et glas " + teOpskrift.navn);
@@ -79,6 +79,9 @@ public class SimpleTest {
             default:
                 System.out.println("Skriv 1 eller 2 for at få vist en opskrift");
         }
+        linjeskift();
+        System.out.println("*****************");
+        glasurOpskrift.showIngrediends();
 
     }
 
