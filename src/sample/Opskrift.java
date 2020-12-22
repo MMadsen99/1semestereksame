@@ -2,7 +2,7 @@ package sample;
 
 import java.util.ArrayList;
 
-public class Opskrift {
+public class Opskrift implements Kalorierberegner {
     String navn = "";
     String fremgangsmaade = "";
     int antalPortioner;
@@ -52,6 +52,12 @@ public class Opskrift {
         System.out.println(fremgangsmaade);
     }
 
+   public int kalorieriAlt() {
+        int sum = 0;
+       for (int i = 0; i < ingredienser.size(); i++) {
 
+       }
+       return sum;
+    }
 }
 

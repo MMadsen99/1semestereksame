@@ -1,8 +1,9 @@
 package sample;
 
-public class Ingrediens {
+public class Ingrediens implements Kalorierberegner{
     String navn;
     int kalorier;
+    Diet diet;
 
     public void ingrediens(String navn, int kalorier) {
         this.navn = navn;
@@ -32,6 +33,12 @@ public class Ingrediens {
 
     public void setKalorier(int kalorier) {
         this.kalorier = kalorier;
+    }
+
+    @Override
+    public int kalorieriAlt() {
+
+        return kalorier;
     }
 }
 

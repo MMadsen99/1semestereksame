@@ -52,7 +52,10 @@ public class SimpleTest {
                 System.out.println(" Kalorieberegning");
                 System.out.println("********************");
                 linjeskift();
-                System.out.println("Der er 150 kalorier i en potion " + glasurOpskrift.navn);
+                Ingrediens glasur = new Ingrediens();
+                glasur.kalorier = 161;
+                glasur.navn = glasurOpskrift.navn;
+                System.out.println(glasur.navn + " har " + glasur.kalorier + " kalorier i sig");
 
                 break;
             case 2:
@@ -67,14 +70,17 @@ public class SimpleTest {
                 System.out.println("Fremgangsmaaden er således: ");
                 teOpskrift.visFremgangsmaade();
                 linjeskift();
-                System.out.println("Du kan eventuelt selvtilføje andre tring til din te som f.eks ingefær");
+                System.out.println("Du kan eventuelt selv tilføje andre tring til din te som f.eks ingefær");
                 linjeskift();
 
                 System.out.println("********************");
                 System.out.println("Kalorieberegning");
                 System.out.println("********************");
                 linjeskift();
-                System.out.println("Der er 11 kalorier i et glas " + teOpskrift.navn);
+                Ingrediens citronte = new Ingrediens();
+                citronte.kalorier = 1;
+                citronte.navn = teOpskrift.navn;
+                System.out.println(citronte.navn + " har " + citronte.kalorier + " en kalorie i sig");
 
 
                 break;
@@ -84,12 +90,7 @@ public class SimpleTest {
         linjeskift();
         System.out.println("*****************");
         linjeskift();
-        IngrediensMedNaeringsdetaljer citronNaering = new IngrediensMedNaeringsdetaljer("Citron",29,58,26,8);
-        linjeskift();
-        IngrediensMedNaeringsdetaljer polseNaering = new IngrediensMedNaeringsdetaljer("Pølse",161,0,21,12);
 
-
-//(String navn, int kalorier, int cVitamin, int kalk, int magnesium)
     }
 
     public static void linjeskift(){
