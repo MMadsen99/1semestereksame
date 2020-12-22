@@ -90,7 +90,7 @@ public class SimpleTest {
         linjeskift();
         System.out.println("*****************");
         linjeskift();
-
+        System.out.println();
     }
     //TODO metode uden parametere
     public static void linjeskift(){
